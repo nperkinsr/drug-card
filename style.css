@@ -1,0 +1,130 @@
+:root {
+    --color1: #292626;
+    --color2: #B5C0D0;
+    --color3: #ebebeb;
+    --color4: #F5E8DD;
+    --color5: #EED3D9;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .single-card-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 100px 140px 80px 80px 5px;;
+    grid-template-rows: 5px 1fr 1fr 5px;
+    height: 110px;
+    width: 445px;
+    background-color: var(--color3);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  div .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    background-color: var(--color1);
+  }
+
+  .icon {
+    grid-area: 1 / 1 / 5 / 2;
+
+  }
+
+  .drug-name {
+    grid-area: 2 / 2 / 3 /4;
+    font-size: 26px;
+  }
+
+  .drug-price {
+    grid-area: 2 / 4 / 3 / 4;
+    font-size: 26px;
+    text-align: end;
+  }
+
+  .pill-area {
+    grid-area: 3 / 2 / 3 / 3 ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .buy-button-container {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+
+  .sell-button-container {
+    grid-area: 3 / 4 / 4 / 5;
+  }
+
+  div .buy-button-container,
+  div .sell-button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+.buy-button,
+.sell-button {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: var(--color1);
+    color: white;
+    font-size: 0.8rem;
+    transition: background-color 0.2s;
+  }
+
+  .buy-button:hover {
+    background-color: rgb(100, 114, 78);
+  }
+
+  .sell-button:hover {
+    background-color: rgb(114, 60, 60);
+  }
+
+  /* PILL BUTTON */
+  .drug-amount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pill-button {
+    background-color: var(--color1);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.2s;
+  }
+
+  .pill-button:hover {
+    background-color: #29262690;
+  }
+
+  .pill {
+    background-color:  #ffffff;
+    color: var(--color2);
+    border-radius: 0.8rem;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    min-width: 1.5rem;
+  }
