@@ -88,6 +88,10 @@
     padding-bottom: 4px;
   }
 
+#increment {
+    padding-top: 2px;
+}
+
   .buy-button:hover {
     background-color: rgb(100, 114, 78);
   }
